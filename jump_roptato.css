@@ -1,0 +1,781 @@
+*,
+*::berfoe,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: orange;
+}
+
+@keyframes jumping {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, -100px);
+  }
+}
+
+@keyframes jumping_face {
+  0% {
+    border-radius: 50% 68% 90% 49%;
+  }
+
+  100% {
+    border-radius: 32% 68% 51% 49%;
+  }
+}
+
+@keyframes jumping_green_stem {
+  0% {
+    transform: rotate(-9deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes jumping_green_left_leaf {
+  0% {
+    transform: rotate(80deg);
+  }
+
+  100% {
+    transform: rotate(60deg);
+  }
+}
+
+@keyframes jumping_green_right_leaf {
+  0% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(200deg);
+  }
+}
+
+@keyframes jumping_eye_deco {
+  0% {
+    transform: translate(1px, 1px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes jumping_eye_deco2 {
+  0% {
+    transform: translate(0.5px, -0.5px);
+  }
+
+  100% {
+    transform: translate(0.5px, -0.5px);
+  }
+}
+
+@keyframes jumping_eye_deco3 {
+  0% {
+    transform: translate(0px, -2px);
+  }
+
+  100% {
+    transform: translate(1px, 0px);
+  }
+}
+
+@keyframes jumping_mouth {
+  0% {
+    transform: rotate(-25deg);
+  }
+
+  100% {
+    transform: rotate(-35deg);
+  }
+}
+
+@keyframes jumping_left_hand {
+  0% {
+    transform: rotate(40deg);
+  }
+
+  100% {
+    transform: rotate(-40deg);
+  }
+}
+
+@keyframes jumping_right_hand {
+  0% {
+    transform: rotate(-40deg);
+  }
+
+  100% {
+    transform: rotate(40deg);
+  }
+}
+
+@keyframes jumping_jump_rope_up {
+  0% {
+    transform: translateY(0px);
+    border: none;
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  75% {
+    border: none;
+  }
+
+  100% {
+    transform: translateY(200px);
+  }
+}
+
+/* 0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(200px);
+    border: none;
+  }
+} */
+
+@keyframes jumping_jump_rope_center {
+  0% {
+    transform: translateY(0px);
+    /* border: none; */
+  }
+
+  50% {
+    transform: translateY(0px);
+    /* border: none; */
+  }
+
+  75% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0px);
+    border: none;
+  }
+}
+
+@keyframes jumping_jump_rope_down {
+  0% {
+    transform: translateY(0px);
+    /* border: none; */
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  75% {
+    border: none;
+  }
+
+  100% {
+    transform: translateY(200px);
+  }
+}
+
+/* 0% {
+    transform: translateY(0px);
+    border: none;
+  }
+
+  100% {
+    transform: translateY(200px);
+  }
+} */
+
+@keyframes jumping_face_deco {
+  0% {
+    transform: rotate(20px);
+  }
+
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes jumping_face_deco2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes jumping_face_deco3 {
+  0% {
+    transform: rotate(-70deg);
+  }
+
+  100% {
+    transform: rotate(-80deg);
+  }
+}
+
+@keyframes jumping_sweat_right {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(250px);
+  }
+}
+
+@keyframes jumping_sweat_left {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(150px);
+  }
+}
+
+@keyframes jumping_sweat_center {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(100px);
+  }
+}
+
+.jump_roptato {
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 350px;
+
+  position: relative;
+
+  animation-name: jumping;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* face */
+
+.face {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(220, 200, 130);
+  border: 3px solid rgb(180, 130, 70);
+  border-radius: 32% 68% 51% 49%;
+
+  transform: rotate(30deg);
+
+  position: relative;
+
+  animation-name: jumping_face;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.face_deco {
+  width: 20px;
+  height: 30px;
+  background-color: rgb(200, 170, 110);
+  border-radius: 10% 70% 25% 80%;
+
+  position: absolute;
+  top: 100px;
+  left: 20px;
+
+  animation-name: jumping_face_deco;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.face_deco2 {
+  width: 20px;
+  height: 50px;
+  background-color: rgb(200, 170, 110);
+  border-radius: 10% 70% 25% 80%;
+
+  position: absolute;
+  top: 100px;
+  right: 70px;
+
+  animation-name: jumping_face_deco2;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.face_deco3 {
+  width: 20px;
+  height: 70px;
+  background-color: rgb(200, 170, 110);
+  border-radius: 10% 70% 25% 80%;
+
+  transform: rotate(-60deg);
+
+  position: absolute;
+  top: 190px;
+  right: 160px;
+
+  animation-name: jumping_face_deco3;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* green */
+
+.green_stem {
+  width: 5px;
+  height: 60px;
+  background-color: rgb(44, 148, 44);
+  border-radius: 0 0 100% 100%;
+
+  transform: rotate(-10deg);
+
+  position: absolute;
+  left: 130px;
+  top: -35px;
+
+  animation-name: jumping_green_stem;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: left bottom;
+}
+
+.green_left_leaf {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(30, 110, 30);
+  border-radius: 100% 0 100% 0;
+
+  transform: rotate(-100deg);
+
+  position: absolute;
+  left: 75px;
+  top: -70px;
+
+  animation-name: jumping_green_left_leaf;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.green_left_leaf_deco {
+  width: 2px;
+  height: 20px;
+  background-color: rgb(23, 83, 23);
+
+  transform: rotate(40deg);
+
+  position: absolute;
+  right: 27px;
+  top: 17px;
+}
+
+.green_right_leaf {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(30, 110, 30);
+  border-radius: 100% 0 100% 0;
+
+  transform: rotate(0deg);
+
+  position: absolute;
+  left: 125px;
+  top: -74px;
+
+  animation-name: jumping_green_right_leaf;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.green_right_leaf_deco {
+  width: 2px;
+  height: 20px;
+  background-color: rgb(23, 83, 23);
+
+  transform: rotate(40deg);
+
+  position: absolute;
+  right: 27px;
+  top: 17px;
+}
+
+/* eye */
+
+.left_eye {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 115px;
+  left: 70px;
+}
+
+.left_eye_deco {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 7px;
+  left: 2px;
+
+  animation-name: jumping_eye_deco;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.left_eye_deco2 {
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 50%;
+
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+
+  animation-name: jumping_eye_deco2;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.left_eye_deco3 {
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  border-radius: 50%;
+
+  position: absolute;
+  right: 3px;
+  top: 10px;
+
+  animation-name: jumping_eye_deco3;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.right_eye {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 73px;
+  left: 140px;
+}
+
+.right_eye_deco {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 7px;
+  left: 3px;
+
+  animation-name: jumping_eye_deco;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.right_eye_deco2 {
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 50%;
+
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+
+  animation-name: jumping_eye_deco2;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.right_eye_deco3 {
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  border-radius: 50%;
+
+  position: absolute;
+  right: 3px;
+  top: 10px;
+
+  animation-name: jumping_eye_deco3;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* mouth */
+
+.mouth {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(230, 70, 70);
+  border-radius: 40% 40% 100% 100%;
+
+  transform: rotate(-30deg);
+
+  position: absolute;
+  top: 120px;
+  left: 120px;
+
+  animation-name: jumping_mouth;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.mouth_deco {
+  width: 2px;
+  height: 17px;
+  background-color: rgb(255, 0, 0);
+
+  position: absolute;
+  top: 5px;
+  left: 14px;
+}
+
+/* hand */
+
+.left_hand {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(223, 207, 187);
+  border: 5px solid rgb(180, 130, 70);
+  border-radius: 50%;
+
+  position: absolute;
+  left: -30px;
+  bottom: 200px;
+
+  animation-name: jumping_left_hand;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.left_hand_deco {
+  width: 20px;
+  height: 3px;
+  background-color: rgb(220, 180, 130);
+
+  position: absolute;
+  left: 0px;
+  top: 35px;
+}
+
+.left_hand_deco2 {
+  width: 20px;
+  height: 3px;
+  background-color: rgb(220, 180, 130);
+
+  position: absolute;
+  left: 0px;
+  top: 45px;
+}
+
+.right_hand {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(223, 207, 187);
+  border: 5px solid rgb(180, 130, 70);
+  border-radius: 50%;
+
+  position: absolute;
+  right: 70px;
+  bottom: 200px;
+
+  animation-name: jumping_right_hand;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.right_hand_deco {
+  width: 20px;
+  height: 3px;
+  background-color: rgb(220, 180, 130);
+
+  position: absolute;
+  right: 0px;
+  top: 35px;
+}
+
+.right_hand_deco2 {
+  width: 20px;
+  height: 3px;
+  background-color: rgb(220, 180, 130);
+
+  position: absolute;
+  right: 0px;
+  top: 45px;
+}
+
+/* jump rope */
+
+.jump_rope_up {
+  width: 370px;
+  height: 470px;
+  border-radius: 100% 100% 40% 40%;
+  border: 3px solid rgb(65, 65, 170);
+
+  position: absolute;
+  left: -38px;
+  bottom: 220px;
+  z-index: -1;
+
+  animation-name: jumping_jump_rope_up;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.jump_rope_center {
+  width: 370px;
+  background-color: rgb(65, 65, 170);
+  border: 1px solid rgb(65, 65, 170);
+
+  position: absolute;
+  left: -38px;
+  bottom: 242px;
+
+  animation-delay: 0.45s;
+  animation-name: jumping_jump_rope_center;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.jump_rope_down {
+  width: 370px;
+  height: 270px;
+  border-radius: 40% 40% 100% 100%;
+  border: 3px solid rgb(65, 65, 170);
+
+  position: absolute;
+  left: -38px;
+  bottom: 170px;
+  z-index: -1;
+
+  animation-name: jumping_jump_rope_down;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bazier(1, 0.25, 0.1, 25, 1);
+}
+
+.left_jump_rope_handle {
+  width: 50px;
+  height: 20px;
+  background-color: rgb(170, 170, 210);
+  border: 5px solid rgb(65, 65, 170);
+  border-radius: 80% 20% 80% 20%;
+
+  transform: rotate(10deg);
+
+  position: absolute;
+  top: 27px;
+  left: -31px;
+  z-index: -1;
+}
+
+.right_jump_rope_handle {
+  width: 50px;
+  height: 20px;
+  background-color: rgb(170, 170, 210);
+  border: 5px solid rgb(65, 65, 170);
+  border-radius: 80% 20% 80% 20%;
+
+  transform: rotate(10deg);
+
+  position: absolute;
+  top: 27px;
+  left: 50px;
+  z-index: -1;
+}
+
+.sweat_left {
+  width: 15px;
+  height: 40px;
+  background-color: skyblue;
+  border: 2px solid rgb(66, 144, 175);
+  border-radius: 30% 100% 30% 70%;
+
+  position: absolute;
+  top: 150px;
+  left: 30px;
+
+  animation-name: jumping_sweat_left;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.89, 0.26, 1, 0.64);
+}
+
+.sweat_right {
+  width: 15px;
+  height: 40px;
+  background-color: skyblue;
+  border: 2px solid rgb(66, 144, 175);
+  border-radius: 30% 100% 30% 70%;
+
+  position: absolute;
+  top: 80px;
+  right: 135px;
+
+  animation-name: jumping_sweat_right;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.38, 0, 0.7, 0.1);
+}
+
+.sweat_center {
+  width: 15px;
+  height: 40px;
+  background-color: skyblue;
+  border: 2px solid rgb(66, 144, 175);
+  border-radius: 30% 100% 30% 70%;
+
+  position: absolute;
+  top: 200px;
+  left: 75px;
+
+  animation-name: jumping_sweat_center;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.38, 0, 0.7, 0.1);
+}
