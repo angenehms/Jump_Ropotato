@@ -120,49 +120,10 @@ body {
 @keyframes jumping_jump_rope_up {
   0% {
     transform: translateY(0px);
-    border: none;
-  }
-
-  50% {
-    transform: translateY(0px);
-  }
-
-  75% {
-    border: none;
   }
 
   100% {
     transform: translateY(200px);
-  }
-}
-
-/* 0% {
-    transform: translateY(0px);
-  }
-
-  100% {
-    transform: translateY(200px);
-    border: none;
-  }
-} */
-
-@keyframes jumping_jump_rope_center {
-  0% {
-    transform: translateY(0px);
-    /* border: none; */
-  }
-
-  50% {
-    transform: translateY(0px);
-    /* border: none; */
-  }
-
-  75% {
-    transform: translateY(-100px);
-  }
-
-  100% {
-    transform: translateY(0px);
     border: none;
   }
 }
@@ -170,14 +131,6 @@ body {
 @keyframes jumping_jump_rope_down {
   0% {
     transform: translateY(0px);
-    /* border: none; */
-  }
-
-  50% {
-    transform: translateY(0px);
-  }
-
-  75% {
     border: none;
   }
 
@@ -185,16 +138,6 @@ body {
     transform: translateY(200px);
   }
 }
-
-/* 0% {
-    transform: translateY(0px);
-    border: none;
-  }
-
-  100% {
-    transform: translateY(200px);
-  }
-} */
 
 @keyframes jumping_face_deco {
   0% {
@@ -660,22 +603,6 @@ body {
   z-index: -1;
 
   animation-name: jumping_jump_rope_up;
-  animation-duration: 0.6s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-.jump_rope_center {
-  width: 370px;
-  background-color: rgb(65, 65, 170);
-  border: 1px solid rgb(65, 65, 170);
-
-  position: absolute;
-  left: -38px;
-  bottom: 242px;
-
-  animation-delay: 0.45s;
-  animation-name: jumping_jump_rope_center;
   animation-duration: 0.6s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
