@@ -169,16 +169,6 @@ body {
   }
 }
 
-@keyframes jumping_sweat_right {
-  0% {
-    transform: translateY(0px);
-  }
-
-  100% {
-    transform: translateY(250px);
-  }
-}
-
 @keyframes jumping_sweat_left {
   0% {
     transform: translateY(0px);
@@ -196,6 +186,16 @@ body {
 
   100% {
     transform: translateY(100px);
+  }
+}
+
+@keyframes jumping_sweat_right {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(250px);
   }
 }
 
@@ -673,23 +673,6 @@ body {
   animation-timing-function: cubic-bezier(0.89, 0.26, 1, 0.64);
 }
 
-.sweat_right {
-  width: 15px;
-  height: 40px;
-  background-color: skyblue;
-  border: 2px solid rgb(66, 144, 175);
-  border-radius: 30% 100% 30% 70%;
-
-  position: absolute;
-  top: 80px;
-  right: 135px;
-
-  animation-name: jumping_sweat_right;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(0.38, 0, 0.7, 0.1);
-}
-
 .sweat_center {
   width: 15px;
   height: 40px;
@@ -703,6 +686,23 @@ body {
 
   animation-name: jumping_sweat_center;
   animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.38, 0, 0.7, 0.1);
+}
+
+.sweat_right {
+  width: 15px;
+  height: 40px;
+  background-color: skyblue;
+  border: 2px solid rgb(66, 144, 175);
+  border-radius: 30% 100% 30% 70%;
+
+  position: absolute;
+  top: 80px;
+  right: 135px;
+
+  animation-name: jumping_sweat_right;
+  animation-duration: 2.5s;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0.38, 0, 0.7, 0.1);
 }
